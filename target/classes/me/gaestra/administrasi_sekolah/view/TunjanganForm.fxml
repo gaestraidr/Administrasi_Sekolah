@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="656.0" prefWidth="1182.0" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.gaestra.administrasi_sekolah.controller.TunjanganFormController">
+   <children>
+      <SplitPane dividerPositions="0.0719" orientation="VERTICAL" prefHeight="656.0" prefWidth="325.0" style="-fx-fill: #000000;" styleClass="bg-primary">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <JFXButton onAction="#backToMenu" text="Kembali" textFill="WHITE">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="ARROW_LEFT" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <StackPane prefHeight="658.0" prefWidth="248.0">
+               <children>
+                  <JFXListView fx:id="menuListView" prefHeight="574.0" prefWidth="291.0" style="-fx-background-color: transparent;">
+                     <StackPane.margin>
+                        <Insets top="30.0" />
+                     </StackPane.margin>
+                  </JFXListView>
+               </children>
+            </StackPane>
+        </items>
+      </SplitPane>
+      <TabPane fx:id="formTabPane" layoutX="325.0" layoutY="-29.0" prefHeight="685.0" prefWidth="856.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="formTab1" text="Manage Tunjangan">
+               <content>
+                  <ScrollPane fx:id="scrollPaneManageTunjangan" fitToWidth="true">
+                     <content>
+                        <VBox>
+                           <children>
+                              <Pane prefHeight="465.0" prefWidth="717.0">
+                                 <children>
+                                    <Pane layoutX="34.0" layoutY="-1.0" prefHeight="390.0" prefWidth="173.0" styleClass="bg-secondary" />
+                                    <Pane layoutX="48.0" layoutY="-2.0" prefHeight="418.0" prefWidth="173.0" styleClass="bg-primary" />
+                                    <Pane layoutX="62.0" layoutY="53.0" prefHeight="390.0" prefWidth="764.0" styleClass="bg-secondary">
+                                       <children>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="VCARD_ALT" layoutX="36.0" layoutY="112.0" size="100" />
+                                          <VBox layoutX="188.0" layoutY="15.0" prefHeight="188.0" prefWidth="571.0">
+                                             <children>
+                                                <FlowPane prefHeight="0.0">
+                                                   <children>
+                                                      <Label prefWidth="173.0" text="Nama Tunjangan" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                         <FlowPane.margin>
+                                                            <Insets right="10.0" />
+                                                         </FlowPane.margin>
+                                                      </Label>
+                                                      <JFXTextField fx:id="manageNama" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                         <font>
+                                                            <Font size="15.0" />
+                                                         </font>
+                                                      </JFXTextField>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" />
+                                                   </VBox.margin>
+                                                </FlowPane>
+                                                <FlowPane layoutX="10.0" layoutY="10.0" prefHeight="0.0">
+                                                   <children>
+                                                      <Label prefWidth="173.0" text="Nominal Tunjangan" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                         <FlowPane.margin>
+                                                            <Insets right="10.0" />
+                                                         </FlowPane.margin>
+                                                      </Label>
+                                                      <Label text="Rp." textFill="WHITE">
+                                                         <font>
+                                                            <Font size="15.0" />
+                                                         </font>
+                                                         <FlowPane.margin>
+                                                            <Insets right="10.0" />
+                                                         </FlowPane.margin>
+                                                      </Label>
+                                                      <JFXTextField fx:id="manageNominal" focusColor="WHITE" prefHeight="31.0" prefWidth="229.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                                         <font>
+                                                            <Font size="15.0" />
+                                                         </font>
+                                                      </JFXTextField>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" />
+                                                   </VBox.margin>
+                                                </FlowPane>
+                                                <FlowPane layoutX="10.0" layoutY="46.0" prefHeight="0.0">
+                                                   <children>
+                                                      <Label prefWidth="173.0" text="Mode Periode" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                         <FlowPane.margin>
+                                                            <Insets right="10.0" />
+                                                         </FlowPane.margin>
+                                                      </Label>
+                                                      <JFXComboBox fx:id="manageMode" focusColor="WHITE" onAction="#changeAccordingToMode" prefHeight="25.0" prefWidth="170.0" styleClass="text-white" unFocusColor="#e1dcdc" />
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" />
+                                                   </VBox.margin>
+                                                </FlowPane>
+                                                <FlowPane layoutX="10.0" layoutY="82.0" prefHeight="0.0">
+                                                   <children>
+                                                      <Label prefHeight="26.0" prefWidth="173.0" text="Untuk" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                         <FlowPane.margin>
+                                                            <Insets right="10.0" />
+                                                         </FlowPane.margin>
+                                                      </Label>
+                                                      <JFXComboBox fx:id="manageSpecified" focusColor="WHITE" onAction="#inputChanged" prefHeight="25.0" prefWidth="170.0" styleClass="text-white" unFocusColor="#e1dcdc" />
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets bottom="10.0" />
+                                                   </VBox.margin>
+                                                </FlowPane>
+                                                <FlowPane layoutX="10.0" layoutY="118.0" prefHeight="0.0">
+                                                   <children>
+                                                      <Label prefHeight="26.0" prefWidth="173.0" text="Dari Tanggal" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                         <FlowPane.margin>
+                                                            <Insets right="10.0" />
+                                                         </FlowPane.margin>
+                                                      </Label>
+                                                      <JFXDatePicker fx:id="manageFirstDate" prefHeight="25.0" prefWidth="293.0" />
+                                                   </children>
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                   <padding>
+                                                      <Insets bottom="10.0" />
+                                                   </padding>
+                                                </FlowPane>
+                                                <FlowPane layoutX="10.0" layoutY="164.0" prefHeight="0.0">
+                                                   <children>
+                                                      <Label prefHeight="26.0" prefWidth="173.0" text="Sampai Tanggal" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="17.0" />
+                                                         </font>
+                                                         <FlowPane.margin>
+                                                            <Insets right="10.0" />
+                                                         </FlowPane.margin>
+                                                      </Label>
+                                                      <JFXDatePicker fx:id="manageSecondDate" prefHeight="25.0" prefWidth="293.0" />
+                                                   </children>
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                   <padding>
+                                                      <Insets bottom="10.0" />
+                                                   </padding>
+                                                </FlowPane>
+                                             </children>
+                                          </VBox>
+                                          <JFXButton buttonType="RAISED" layoutX="596.0" layoutY="364.0" onAction="#updateModelData" prefHeight="39.0" prefWidth="146.0" styleClass="bg-primary" text="Update" textFill="WHITE">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="EDIT" size="25" />
+                                             </graphic>
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <JFXButton buttonType="RAISED" layoutX="437.0" layoutY="364.0" onAction="#deleteModelData" prefHeight="39.0" prefWidth="146.0" styleClass="bg-primary" text="Hapus" textFill="WHITE">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="TRASH" size="25" />
+                                             </graphic>
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <Label fx:id="manageSelectedModel" alignment="TOP_CENTER" layoutX="23.0" layoutY="146.0" prefHeight="184.0" prefWidth="131.0" text="Selected: None" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <JFXButton buttonType="RAISED" layoutX="20.0" layoutY="364.0" onAction="#printRekapanTunjangan" prefHeight="39.0" prefWidth="187.0" styleClass="bg-primary" text="Cetak Rekapan" textFill="WHITE">
+                                             <graphic>
+                                                <FontAwesomeIconView fill="WHITE" glyphName="PRINT" size="25" />
+                                             </graphic>
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                    </Pane>
+                                    <Label layoutX="481.0" layoutY="17.0" prefHeight="56.0" prefWidth="325.0" styleClass="bg-secondary" text="Manage Data Tunjangan" textFill="WHITE">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                       <graphic>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="CLIPBOARD" size="30" />
+                                       </graphic>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <TableView fx:id="manageTableView" onMouseClicked="#itemClicked" prefHeight="343.0" />
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+          <Tab fx:id="formTab2" text="Tambah Tunjangan">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="95.0" layoutY="137.0" prefHeight="341.0" prefWidth="636.0" styleClass="bg-secondary">
+                           <children>
+                              <FlowPane prefHeight="0.0">
+                                 <children>
+                                    <Label prefWidth="173.0" text="Nama Tunjangan" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets right="10.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <JFXTextField fx:id="createNama" focusColor="WHITE" prefHeight="25.0" prefWidth="260.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </JFXTextField>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </FlowPane>
+                              <FlowPane layoutX="10.0" layoutY="10.0" prefHeight="0.0">
+                                 <children>
+                                    <Label prefWidth="173.0" text="Nominal Tunjangan" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets right="10.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <Label text="Rp." textFill="WHITE">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets right="10.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <JFXTextField fx:id="createNominal" focusColor="WHITE" prefHeight="31.0" prefWidth="229.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="#e1dcdc">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </JFXTextField>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </FlowPane>
+                              <FlowPane layoutX="10.0" layoutY="46.0" prefHeight="0.0">
+                                 <children>
+                                    <Label prefWidth="173.0" text="Mode Periode" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets right="10.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <JFXComboBox fx:id="createMode" focusColor="WHITE" onAction="#changeAccordingToMode" prefHeight="25.0" prefWidth="170.0" unFocusColor="#e1dcdc" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </FlowPane>
+                              <FlowPane layoutX="10.0" layoutY="82.0" prefHeight="0.0">
+                                 <children>
+                                    <Label prefHeight="26.0" prefWidth="173.0" text="Untuk" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets right="10.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <JFXComboBox fx:id="createSpecified" focusColor="WHITE" prefHeight="25.0" prefWidth="170.0" unFocusColor="#e1dcdc" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </FlowPane>
+                              <FlowPane layoutX="10.0" layoutY="118.0" prefHeight="0.0">
+                                 <children>
+                                    <Label prefHeight="26.0" prefWidth="173.0" text="Dari Tanggal" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets right="10.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <JFXDatePicker fx:id="createFirstDate" prefHeight="25.0" prefWidth="293.0" />
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="10.0" />
+                                 </padding>
+                              </FlowPane>
+                              <FlowPane layoutX="40.0" layoutY="194.0" prefHeight="0.0">
+                                 <children>
+                                    <Label prefHeight="26.0" prefWidth="173.0" text="Sampai Tanggal" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets right="10.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <JFXDatePicker fx:id="createSecondDate" prefHeight="25.0" prefWidth="293.0" />
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="10.0" />
+                                 </padding>
+                              </FlowPane>
+                           </children>
+                           <padding>
+                              <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                           </padding>
+                        </VBox>
+                        <Label layoutX="44.0" layoutY="14.0" prefHeight="36.0" prefWidth="337.0" text=" Tambah Data Tunjangan">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="VCARD" size="25" />
+                           </graphic>
+                        </Label>
+                        <JFXButton buttonType="RAISED" layoutX="501.0" layoutY="448.0" onAction="#addDataToModel" prefHeight="45.0" prefWidth="206.0" text=" Tambah Tunjangan">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="20" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="bg-primary" />
+                              <String fx:value="text-white" />
+                           </styleClass>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+            <Tab fx:id="formTab21" text="Manage Tunjangan Siswa">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="95.0" layoutY="137.0" prefHeight="341.0" prefWidth="636.0" styleClass="bg-secondary">
+                           <children>
+                              <FlowPane prefHeight="0.0">
+                                 <children>
+                                    <Label prefWidth="173.0" text="Siswa" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets right="10.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <JFXComboBox fx:id="manageSiswa" focusColor="WHITE" onAction="#siswaChanged" prefHeight="25.0" prefWidth="260.0" unFocusColor="#b5b5b5" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </FlowPane>
+                              <FlowPane layoutX="10.0" layoutY="10.0" prefHeight="0.0">
+                                 <children>
+                                    <Label prefWidth="173.0" text="Tipe Tunjangan" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets right="10.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <JFXComboBox fx:id="manageTipeTunjangan" prefHeight="25.0" prefWidth="260.0" unFocusColor="#b5b3b3" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </FlowPane>
+                              <FlowPane layoutX="10.0" layoutY="46.0" prefHeight="0.0">
+                                 <children>
+                                    <Label prefWidth="173.0" text="Tanggal Pengisuan" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets right="10.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <JFXDatePicker fx:id="manageIssuedDate" prefWidth="251.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </FlowPane>
+                              <FlowPane prefHeight="0.0">
+                                 <children>
+                                    <Label prefWidth="173.0" text="Tanggal Tenggang" textFill="WHITE">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                       <FlowPane.margin>
+                                          <Insets right="10.0" />
+                                       </FlowPane.margin>
+                                    </Label>
+                                    <JFXDatePicker fx:id="manageGraceDate" prefHeight="31.0" prefWidth="251.0" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </FlowPane>
+                              <FlowPane layoutX="40.0" layoutY="112.0" prefHeight="0.0">
+                                 <children>
+                                    <TableView fx:id="manageSiswaTunjanganTableView" prefHeight="200.0" prefWidth="575.0" />
+                                 </children>
+                              </FlowPane>
+                           </children>
+                           <padding>
+                              <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                           </padding>
+                        </VBox>
+                        <Label layoutX="44.0" layoutY="14.0" prefHeight="36.0" prefWidth="337.0" text="Manage Tunjangan Siswa">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="VCARD" size="25" />
+                           </graphic>
+                        </Label>
+                        <JFXButton buttonType="RAISED" layoutX="448.0" layoutY="548.0" onAction="#storeOrUpdateTunjanganSiswa" prefHeight="45.0" prefWidth="268.0" text=" Tambah Tunjangan">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="20" />
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="bg-primary" />
+                              <String fx:value="text-white" />
+                           </styleClass>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" layoutX="169.0" layoutY="548.0" onAction="#printRekapanTunjanganSiswa" prefHeight="39.0" prefWidth="187.0" styleClass="bg-primary" text="Cetak Rekapan" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="PRINT" size="25" />
+                           </graphic>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import me.gaestra.administrasi_sekolah.ClippedPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="634.0" prefWidth="773.0" style="-fx-background-color: #ffffff;" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.gaestra.administrasi_sekolah.controller.MenuFormController">
+   <children>
+      <ImageView fitHeight="634.0" fitWidth="780.0" pickOnBounds="true">
+         <image>
+            <Image url="@style/bg-menu-zoomed.png" />
+         </image>
+      </ImageView>
+      <Pane id="Name" opacity="0.0" prefHeight="634.0" prefWidth="773.0" style="-fx-background-color: BLACK;" />
+      <Pane layoutX="436.0" layoutY="576.0" opacity="0.76" prefHeight="32.0" prefWidth="320.0" styleClass="bg-primary" />
+      <me.gaestra.administrasi_sekolah.ClippedPane fx:id="paneButtonSiswa" layoutX="151.0" layoutY="236.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #009faf;">
+         <children>
+            
+                                                                              <de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView fill="#f8e8e8" glyphName="GRADUATION_CAP" layoutX="70.0" layoutY="170.0" opacity="0.21" size="125px" />
+            <JFXButton alignment="CENTER" buttonType="RAISED" onAction="#menuGoTo" onMouseEntered="#hoverAnimation" prefHeight="150.0" prefWidth="150.0" style="-fx-padding: 20px;" text="Data Siswa" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </me.gaestra.administrasi_sekolah.ClippedPane>
+      <me.gaestra.administrasi_sekolah.ClippedPane fx:id="paneButtonTunjangan" layoutX="313.0" layoutY="236.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #009faf;">
+         <children>
+            <FontAwesomeIconView fill="#f8e8e8" glyphName="CLIPBOARD" layoutX="75.0" layoutY="175.0" opacity="0.21" size="120px" />
+            <JFXButton alignment="CENTER" buttonType="RAISED" onAction="#menuGoTo" prefHeight="150.0" prefWidth="150.0" style="-fx-padding: 20px;" text="Data Tunjangan" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </me.gaestra.administrasi_sekolah.ClippedPane>
+      <me.gaestra.administrasi_sekolah.ClippedPane fx:id="paneButtonNota" layoutX="473.0" layoutY="236.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #009faf;">
+         <children>
+            <FontAwesomeIconView fill="#f8e8e8" glyphName="FILE" layoutX="75.0" layoutY="175.0" opacity="0.21" size="120px" />
+            <JFXButton alignment="CENTER" buttonType="RAISED" onAction="#menuGoTo" prefHeight="150.0" prefWidth="150.0" style="-fx-padding: 20px;" text="Data Nota" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </me.gaestra.administrasi_sekolah.ClippedPane>
+      <me.gaestra.administrasi_sekolah.ClippedPane fx:id="paneButtonKelas" layoutX="230.0" layoutY="396.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #009faf;">
+         <children>
+            <FontAwesomeIconView fill="#f8e8e8" glyphName="HOME" layoutX="75.0" layoutY="175.0" opacity="0.21" size="145px" />
+            <JFXButton alignment="CENTER" buttonType="RAISED" onAction="#menuGoTo" prefHeight="150.0" prefWidth="150.0" style="-fx-padding: 20px;" text="Data Kelas" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </me.gaestra.administrasi_sekolah.ClippedPane>
+      <me.gaestra.administrasi_sekolah.ClippedPane fx:id="paneButtonStaff" layoutX="390.0" layoutY="396.0" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #009faf;">
+         <children>
+            <FontAwesomeIconView fill="#f8e8e8" glyphName="MALE" layoutX="90.0" layoutY="175.0" opacity="0.21" size="120px" />
+            <JFXButton alignment="CENTER" buttonType="RAISED" onAction="#menuGoTo" prefHeight="150.0" prefWidth="150.0" style="-fx-padding: 20px;" text="Data Staff" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </me.gaestra.administrasi_sekolah.ClippedPane>
+      <ImageView fitHeight="68.0" fitWidth="69.0" layoutX="357.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: screen;" AnchorPane.topAnchor="6.0">
+         <image>
+            <Image url="@style/logo.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutY="87.0" prefHeight="43.0" prefWidth="773.0" styleClass="bg-primary" text="Sistem Pembayaran Keuangan Sekolah" textFill="WHITE" visible="false" AnchorPane.topAnchor="87.0">
+         <font>
+            <Font name="Calibri" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="151.0" layoutY="200.0" prefHeight="32.0" prefWidth="473.0" styleClass="bg-secondary" text="Menu" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="255.0" layoutY="107.0" text="SMA SUMBANGSIH" textFill="#8ab5ff">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="258.0" layoutY="146.0" text="JL. AMPERA RAYA NO.3-4 JAKSEL" textFill="#ffb600">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Pane layoutX="297.0" layoutY="93.0" prefHeight="2.0" prefWidth="188.0" style="-fx-border-color: #ffe104; -fx-border-width: 2px;" />
+      <Label fx:id="menuTimestamp" alignment="CENTER" layoutX="438.0" layoutY="576.0" prefHeight="32.0" prefWidth="320.0" text="Senin, 5 Juli 2021 7:00 AM" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

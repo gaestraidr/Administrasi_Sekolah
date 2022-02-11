@@ -1,0 +1,9 @@
+[LOG] [E] [2022/01/30 06:03:42]: DatabaseManager.open() Error: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[LOG] [E] [2022/01/30 06:03:52]: DatabaseManager.open() Error: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[LOG] [E] [2022/01/30 06:04:14]: DatabaseManager.open() Error: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.

@@ -1,0 +1,118 @@
+
+/* General Style */
+
+.button-menu {
+	-fx-background-color: #3f51b5;
+}
+
+.text-white {
+	-fx-text-fill: #FFFFFF;
+	-fx-fill: #FFFFFF;
+}
+
+.pad-left {
+	-fx-padding: 0 0 0 20;
+}
+
+.pad-right {
+	-fx-padding: 0 20 0 0;
+}
+
+/* BG Color */
+
+.bg-primary {
+	-fx-background-color: #009faf;
+}
+
+.bg-secondary {
+	-fx-background-color: #006064;
+}
+
+.bg-danger {
+	-fx-background-color: #dc3545;
+}
+
+.bg-warning {
+	-fx-background-color: #ffc107;
+}
+
+.bg-success {
+	-fx-background-color: #28a745;
+}
+
+/* JFXListView */
+
+.jfx-list-cell {
+	-fx-background-color: transparent;
+	-fx-text-fill: #FFFFFF;
+}
+.jfx-list-cell Label {
+	-fx-text-fill: #FFFFFF;
+	-fx-font-size: 20px;
+	-fx-label-padding: 0 0 0 20px;
+}
+.jfx-list-cell FontAwesomeIconView {
+	-fx-fill: #FFFFFF;
+}
+
+.jfx-list-cell:selected {
+	-fx-background-color: #FFFFFF;
+}
+.jfx-list-cell:selected Label {
+	-fx-text-fill: #000000;
+}
+.jfx-list-cell:selected FontAwesomeIconView {
+	-fx-fill: #000000;
+}
+
+.jfx-list-cell:hover {
+	-fx-background-color: #FFFFFF;
+}
+.jfx-list-cell:hover Label {
+	-fx-text-fill: #000000;
+}
+.jfx-list-cell:hover FontAwesomeIconView {
+	-fx-fill: #000000;
+}
+
+/* =========== */
+
+/* JFXDatePicker */
+
+.jfx-date-picker .text-field{
+	-jfx-unfocus-color: #e1dcdc;
+	-fx-prompt-text-fill: #e1dcdc;
+	-fx-text-fill: WHITE;
+	-fx-font-size: 15px;
+}
+
+/* ============= */
+
+/* JFXComboBox */
+
+.jfx-combo-box {
+	-fx-prompt-text-fill: WHITE !important;
+}
+
+.jfx-combo-box .cell:focused {
+    -fx-text-fill: WHITE;
+}
+
+.jfx-combo-box .cell {
+    -fx-text-fill: BLACK;
+}
+
+/* ============= */
+
+/*  TableView */
+
+.table-row-red {
+	-fx-background-color: #dc3545;
+}
+
+.table-row-red .cell {
+	-fx-text-fill: #FFFFFF;
+	-fx-fill: #FFFFFF;
+}
+
+/* ============ */

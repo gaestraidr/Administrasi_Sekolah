@@ -1,0 +1,3 @@
+[LOG] [E] [2021/07/04 02:22:53]: DatabaseManager.execute() Error: [SQLITE_ERROR] SQL error or missing database (near "nama": syntax error)
+[LOG] [E] [2021/07/04 02:23:53]: DatabaseManager.execute() Error: [SQLITE_ERROR] SQL error or missing database (near "nama": syntax error)
+[LOG] [E] [2021/07/04 02:24:25]: DatabaseManager.execute() Error: [SQLITE_ERROR] SQL error or missing database (near "nama": syntax error)

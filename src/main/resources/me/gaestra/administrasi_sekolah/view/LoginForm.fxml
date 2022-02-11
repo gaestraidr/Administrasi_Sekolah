@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="401.0" styleClass="bg-secondary" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.gaestra.administrasi_sekolah.controller.LoginFormController">
+   <children>
+      <AnchorPane fx:id="loginForm" prefHeight="591.0" prefWidth="401.0">
+         <children>
+            <JFXTextField fx:id="loginUsername" focusColor="WHITE" layoutX="78.0" layoutY="235.0" onAction="#doLogin" prefHeight="25.0" prefWidth="300.0" promptText="Username" style="-fx-prompt-text-fill: #b2aeae;" styleClass="text-white" unFocusColor="#b2aeae">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXTextField>
+            <FontAwesomeIconView fill="WHITE" glyphName="VCARD" layoutX="28.0" layoutY="272.0" size="30" />
+            <FontAwesomeIconView fill="WHITE" glyphName="CERTIFICATE" layoutX="31.0" layoutY="325.0" size="30" />
+            <JFXPasswordField fx:id="loginPassword" focusColor="WHITE" layoutX="78.0" layoutY="290.0" onAction="#doLogin" prefHeight="25.0" prefWidth="300.0" promptText="Password" style="-fx-prompt-text-fill: #b2aeae;" styleClass="text-white" unFocusColor="#b2aeae">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXPasswordField>
+            <Label layoutX="45.0" layoutY="153.0" text=" Selamat Datang! Silahkan lakukan login" textFill="#93aaff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="145.0" layoutY="488.0" onAction="#doLogin" prefHeight="54.0" prefWidth="112.0" styleClass="button-menu" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="loginError" alignment="CENTER" layoutX="46.0" layoutY="355.0" prefHeight="27.0" prefWidth="318.0" textFill="#f89393" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="37.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="100.0" fitWidth="96.0" layoutX="152.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@style/logo-white.png" />
+         </image>
+      </ImageView>
+      <JFXSpinner fx:id="loginSpinner" layoutX="175.0" layoutY="250.0" visible="false" />
+      <JFXButton layoutX="354.0" onAction="#doExit" text="X" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

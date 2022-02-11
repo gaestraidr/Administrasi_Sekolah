@@ -1,0 +1,26 @@
+[LOG] [E] [2021/07/18 09:59:16]: DatabaseManager.open() Error: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[LOG] [E] [2021/07/18 09:59:20]: DatabaseManager.open() Error: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[LOG] [E] [2021/07/18 09:59:23]: DatabaseManager.open() Error: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[LOG] [E] [2021/07/18 16:10:54]: DatabaseManager.open() Error: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[LOG] [E] [2021/07/18 16:10:57]: DatabaseManager.open() Error: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[LOG] [E] [2021/07/18 16:11:00]: DatabaseManager.open() Error: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[LOG] [E] [2021/07/18 16:25:23]: DatabaseManager.execute() Error: Data truncation: Incorrect datetime value: '18/07/2021' for column 'executed_at' at row 1
+[LOG] [E] [2021/07/18 16:33:54]: DatabaseManager.execute() Error: Data truncation: Incorrect datetime value: '18/07/2021' for column 'executed_at' at row 1
+[LOG] [E] [2021/07/18 18:22:59]: DatabaseManager.open() Error: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[LOG] [E] [2021/07/18 18:23:07]: DatabaseManager.open() Error: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.

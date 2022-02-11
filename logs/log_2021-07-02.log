@@ -1,0 +1,5 @@
+[LOG] [E] [2021/07/02 00:15:51]: DatabaseManager.execute() Error: [SQLITE_ERROR] SQL error or missing database (no such table: Kelas)
+[LOG] [E] [2021/07/02 13:47:51]: DatabaseManager.execute() Error: query does not return ResultSet
+[LOG] [E] [2021/07/02 13:48:08]: DatabaseManager.execute() Error: query does not return ResultSet
+[LOG] [E] [2021/07/02 13:48:11]: DatabaseManager.execute() Error: query does not return ResultSet
+[LOG] [E] [2021/07/02 13:48:11]: DatabaseManager.execute() Error: query does not return ResultSet

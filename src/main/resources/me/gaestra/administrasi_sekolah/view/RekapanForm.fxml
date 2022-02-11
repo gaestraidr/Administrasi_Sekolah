@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="cetakRootLayout" prefWidth="1000.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.gaestra.administrasi_sekolah.controller.RekapanFormController">
+   <children>
+      <VBox fx:id="cetakBoxLayout" layoutX="14.0" layoutY="217.0" prefWidth="967.0" AnchorPane.bottomAnchor="216.0" AnchorPane.topAnchor="200.0">
+         <children>
+            <TableView fx:id="cetakTableView" />
+         </children>
+      </VBox>
+      <ImageView fitHeight="135.0" fitWidth="413.0" layoutX="23.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="19.0">
+         <image>
+            <Image url="@style/logo-wide.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="cetakDate" alignment="CENTER" layoutX="950.0" layoutY="808.0" prefWidth="183.0" text="Date" AnchorPane.bottomAnchor="110.0" AnchorPane.rightAnchor="22.0" />
+      <Label fx:id="cetakJabatan" alignment="CENTER" layoutX="953.0" layoutY="831.0" prefHeight="17.0" prefWidth="183.0" text="Jabatan" AnchorPane.bottomAnchor="90.0" AnchorPane.rightAnchor="22.0" />
+      <Label fx:id="cetakStaff" alignment="CENTER" layoutX="951.0" layoutY="907.0" prefWidth="183.0" text="Nama Staff" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="22.0" />
+      <Pane layoutY="168.0" prefHeight="6.0" prefWidth="999.0" style="-fx-border-color: BLACK; -fx-background-color: BLACK;" />
+      <Pane layoutY="176.0" prefHeight="0.0" prefWidth="999.0" style="-fx-border-color: BLACK; -fx-background-color: BLACK;" />
+      <Label fx:id="cetakTitle" alignment="CENTER" layoutX="425.0" layoutY="42.0" prefHeight="102.0" prefWidth="514.0" text="Rekapan Data Tunjangan" wrapText="true" AnchorPane.topAnchor="42.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="cetakPrint" layoutX="590.0" layoutY="779.0" onAction="#doPrint" prefHeight="32.0" prefWidth="100.0" styleClass="bg-primary" text="Cetak" textFill="WHITE" AnchorPane.bottomAnchor="22.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="PRINT" styleClass="text-white" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="cetakCancel" layoutX="288.0" layoutY="779.0" onAction="#doExit" prefHeight="32.0" prefWidth="100.0" styleClass="bg-secondary" text="Cancel" textFill="WHITE" AnchorPane.bottomAnchor="22.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="ARROW_LEFT" styleClass="text-white" />
+         </graphic>
+      </JFXButton>
+   </children>
+   <stylesheets>
+      <URL value="@style/style.css" />
+      <URL value="@style/cetak-style.css" />
+   </stylesheets>
+</AnchorPane>
