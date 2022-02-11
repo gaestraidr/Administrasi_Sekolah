@@ -1,7 +1,7 @@
 # SchoolADM
  A desktop application for school administration needs.
 
- This application is a personal project made solely for administration purpose in school. Made with Java using JavaFX freamwork.
+ This application is a personal project made solely for administration purpose in school. Made with Java using JavaFX framework.
  
 ## Current Feature
 
